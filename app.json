@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Brupholee",
+    "slug": "brupholee",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone"
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos.",
+          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos."
+        }
+      ]
+    ],
+    "ios": {
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs access to your camera.",
+        "NSMicrophoneUsageDescription": "This app needs access to your microphone.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library.",
+        "NSPhotoLibraryAddUsageDescription": "This app needs permission to save photos to your library."
+      },
+      "bundleIdentifier": "com.anonymous.brupholee"
+    },
+    "android": {
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ],
+      "package": "com.anonymous.brupholee"
+    }
+  }
+}
